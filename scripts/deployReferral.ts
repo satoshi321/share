@@ -10,7 +10,7 @@ export async function run(provider: NetworkProvider) {
             total_supply: 0n,
             total_burn: 0n,
             treasure: 0n,
-            minter_address: Address.parseFriendly('EQCQnOQL-EdqDp4AlWDuXKIs-l6eGv58VQkQ5UH8htZw5Xeh').address,
+            minter_address: Address.parseFriendly('EQDoMHwzwvR5zplUbyYWgHtYSggxRYqR6TPxB1R0yQcuAl6u').address,
             referral_item_code: await compile('ReferralItem'),
             jetton_item_code: Cell.fromBoc(
                 Buffer.from(

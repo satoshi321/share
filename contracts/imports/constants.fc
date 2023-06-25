@@ -1,10 +1,10 @@
 const int const::min_ton_for_ref = 10000000000; ;; 10 Ton
 const int const::min_ton = 9960000000; ;; 9.96 Ton
-const int const::min_for_treasure = 9880000000; ;; 9.88 Ton
-const int const::min_for_mint = 50000000; ;; 0.05 Ton
+const int const::min_for_treasure = 9880000000; ;; 9.86 Ton
+const int const::min_for_mint = 60000000; ;; 0.06 Ton
 const int const::min_for_storage = 10000000; ;; 0.01 Ton
 const int const::min_for_deploy = 10000000; ;; 0.01 Ton
-const int const::max_supply = 8386560000000000; ;; 8,386,560 tokens
+const int const::max_supply = 33554432000000000; ;; 33,554,432 tokens
 
 const int op::deploy_ref_item = 201;
 const int op::new_ref = 202;

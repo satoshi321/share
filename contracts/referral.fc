@@ -41,9 +41,9 @@ global cell storage::jetton_item_code;
     );
 }
 
-() mint_reward_tokens(int reward, slice addr_from, slice addr_to) impure {
-    builder bodyFrom = create_jetton_mint_body(0, 40000000, reward / 2, addr_from);
-    builder bodyTo = create_jetton_mint_body(1, 40000000, reward / 2, addr_to);
+() mint_reward_tokens(int reward, slice addr_from, slice addr_to) impure inline_ref {
+    builder bodyFrom = create_jetton_mint_body(now(), 40000000, reward / 2, addr_from);
+    builder bodyTo = create_jetton_mint_body(now() + 1, 40000000, reward / 2, addr_to);
     send_simple_message(const::min_for_mint, storage::minter_address, bodyTo.end_cell(), 1);
     send_simple_message(const::min_for_mint, storage::minter_address, bodyFrom.end_cell(), 1);
 }
